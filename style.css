@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Inter-VariableFont';
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-bold';
+    src: url('./assets/fonts/static/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-medium';
+    src: url('./assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('./assets/fonts/static/Inter-Regular.ttf') format('truetype');
+}
+
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+    height: calc(100vh - 20px);
+}
+
+
+.container {
+    max-width: 1440px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card {
+    width: 30%;
+    background-color: hsl(0, 0%, 12%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    width: 30%;
+    margin: 24px 0px 24px 0px;
+}
+
+.profile-card h1 {
+    font-family: 'Inter-bold', sans-serif;
+    font-size: 28px;
+    letter-spacing: .5px;
+    margin-bottom: 8px;
+}
+
+.profile-card h2 {
+    font-family: 'Inter-medium', sans-serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: hsl(75, 94%, 57%);
+    letter-spacing: .5px;
+}
+
+.profile-card p {
+    font-size: 14px;
+    font-family: 'Inter-regular', sans-serif;
+    margin-bottom: 16px;
+    letter-spacing: .5px;
+}
+
+#last {
+    margin-bottom: 24px;
+}
+
+.profile-card a {
+    color: aliceblue;
+    letter-spacing: .5px;
+    text-decoration: none;
+    font-family: 'Inter-regular', sans-serif;
+    background-color: hsl(0, 0%, 20%);
+    width: 90%;
+    margin: 8px 0px;
+    text-align: center;
+    padding: 12px 0px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+
+
+.profile-card a:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    height: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (max-width: 375px) {
+    .profile-card {
+        width: 90%;
+        margin-top: 12px;
+    }
+
+    body {
+        height: auto;
+    }
+
+    .attribution {
+        margin-top: 12px;
+        height: auto;
+    }
+}
